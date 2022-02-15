@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat:wght@300&family=Rock+Salt&display=swap');
+ /* font family: Montserrat + Rock Salt */
+
+ body {
+     background-color: rgb(233, 216, 166);
+ }
+
+ header {
+     font-family: 'Montserrat', cursive;
+ }
+
+ #title {
+     font-family: 'Rock Salt', cursive;
+ }
+
+.color {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.color.black {
+    background-color: black;
+}
+
+.color.bisque {
+    background-color: bisque;
+}
+
+.color.darkgoldenrod {
+    background-color: darkgoldenrod;
+}
+
+.color.darkred {
+    background-color: darkred;
+}
