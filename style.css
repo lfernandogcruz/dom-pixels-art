@@ -42,6 +42,13 @@ header {
   background-color: darkred;
 }
 
+.color.selected {
+  border: 1px solid black;
+  box-shadow:
+    2px 2px 2px white,
+    3px 3px 3px black;
+}
+
 .pixel {
   display: inline-block;
   background-color: white;
