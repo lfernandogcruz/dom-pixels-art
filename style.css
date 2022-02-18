@@ -26,23 +26,23 @@ header {
   border: 1px solid black;
 }
 
-.color.black {
+.black {
   background-color: black;
 }
 
-.color.bisque {
+.bisque {
   background-color: bisque;
 }
 
-.color.darkgoldenrod {
+.darkgoldenrod {
   background-color: darkgoldenrod;
 }
 
-.color.darkred {
+.darkred {
   background-color: darkred;
 }
 
-.color.selected {
+.selected {
   border: 1px solid black;
   box-shadow: 2px 2px 2px white,
     3px 3px 3px black;
