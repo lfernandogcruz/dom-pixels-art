@@ -1,5 +1,30 @@
 // criar os 'pixel'screen, iniciando com 5x5
-let pixelMatrix = 5;
+window.onload = generatePixels(5);
+
+let vqvBtn = document.getElementById('generate-board');
+let boardSize = document.getElementById('board-size');
+
+vqvBtn.addEventListener('click', function () {
+  let elementoPxBoard = document.getElementById('pixel-board');
+  let pixelMatrix = 5;
+  if (boardSize.value == '') {
+    alert('Board inválido!');
+  } else if (boardSize.value <= 5) {
+    pixelMatrix = 5;
+    elementoPxBoard.innerHTML = '';
+    generatePixels(pixelMatrix);
+  } else if (boardSize.value >= 50) {
+    pixelMatrix = 50;
+    elementoPxBoard.innerHTML = '';
+    generatePixels(pixelMatrix);
+  } else {
+    pixelMatrix = boardSize.value;
+    elementoPxBoard.innerHTML = '';
+    generatePixels(pixelMatrix);
+  };
+});
+
+
 function generatePixels(pixelMatrix) {
   // criar qnt de divs com 'classe="pixel"' (pixelMatrix) vezes
   let pixelBoard = document.getElementById('pixel-board');
@@ -15,7 +40,7 @@ function generatePixels(pixelMatrix) {
     pixelBoard.appendChild(lineBreak);
   }
 }
-generatePixels(pixelMatrix);
+
 
 // seletor de cor
 // ao clicar numa cor add .selected
@@ -43,6 +68,11 @@ clearBtn.addEventListener('click', function (){
     elementoPixel[k].style.backgroundColor = 'white';
   };
 });
+
+
+
+
+
 // .
 // .
 // referencia para atribuicao de classe ao elemento criado no link:

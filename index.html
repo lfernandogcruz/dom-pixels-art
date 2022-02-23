@@ -2,35 +2,39 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>:: Pixel Art ::</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>:: Pixel Art ::</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <p id="real-title"> :: Projeto Pixel Art :: </p>
-        <h1 id="title">Paleta de Cores</h1>
-        <div id="color-palette">
-            <div class="color black selected" id="black"></div>
-            <div class="color bisque" id="bisque"></div>
-            <div class="color darkgoldenrod" id="darkgoldenrod"></div>
-            <div class="color darkred" id="darkred"></div>
-        </div>
-        <button id="clear-board">Limpar</button>
-    </header>
-    <main>
-        <section class="pixel-board" id="pixel-board">
-            
-        </section>
+	<header>
+		<p id="real-title"> :: Projeto Pixel Art :: </p>
+		<h1 id="title">Paleta de Cores</h1>
+		<div id="color-palette">
+			<div class="color black selected" id="black"></div>
+			<div class="color bisque" id="bisque"></div>
+			<div class="color darkgoldenrod" id="darkgoldenrod"></div>
+			<div class="color darkred" id="darkred"></div>
+		</div>
+		<div id="set-size">
+			<input type="number" name="board-size" id="board-size" placeholder="Nº de 5 a 50" min="1">
+			<button id="generate-board">VQV</button>
+		</div>
+		<button id="clear-board">Limpar</button>
+	</header>
+	<main>
+		<section class="pixel-board" id="pixel-board">
 
-    </main>
-    <footer>
+		</section>
 
-    </footer>
-    <script src="script.js"></script>
+	</main>
+	<footer>
+
+	</footer>
+	<script src="script.js"></script>
 </body>
 
 </html>
