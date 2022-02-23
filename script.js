@@ -27,20 +27,7 @@ function addClassSelected(event) {
 }
 elementSelected.addEventListener('click', addClassSelected);
 
-
-
-
-
-
-
-
-
-
 // captura bg color de .selected
-
-
-
-
 // altera o bg color do el .pixel
 function changeBgColor(event) {
   let elementBrushColor = document.querySelector('.selected');
@@ -49,14 +36,13 @@ function changeBgColor(event) {
   event.target.style.backgroundColor = brushColor;
 }
 
-
-
-
-
-
-
-
-
+let clearBtn = document.getElementById('clear-board');
+clearBtn.addEventListener('click', function (){
+  let elementoPixel = document.querySelectorAll('.pixel');
+  for (let k = 0; k < elementoPixel.length; k += 1) {
+    elementoPixel[k].style.backgroundColor = 'white';
+  };
+});
 // .
 // .
 // referencia para atribuicao de classe ao elemento criado no link:
